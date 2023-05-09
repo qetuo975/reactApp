@@ -1,0 +1,19 @@
+.BlogContainer {
+    margin: 0 2rem;
+}
+
+.BlogList {
+    width: 100%;
+    height: 700px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.BlogItem {
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+}
+

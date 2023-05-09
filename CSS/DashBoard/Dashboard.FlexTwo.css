@@ -1,0 +1,40 @@
+.FlexTwo {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 2rem !important;
+}
+
+.FlexTwoTabsArea {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.FlexTwoTabs {
+    border-radius: inherit;
+    overflow: auto;
+    background-color: #d1d8e0;
+}
+
+.FlexTwoTab {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 800 !important;
+    animation: FlexTwoTabAnimation 1s forwards;
+}
+
+.TabPanelTwo {
+    border-radius: 20px;
+    padding: 15px;
+    height: 350px;
+    border: 2px solid #1B9CFC;
+}
+
+@keyframes FlexTwoTabAnimation {
+    from {
+        transform: translateX(-500px) rotate(360deg);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}

@@ -1,0 +1,409 @@
+/* SideBar */
+
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SideBar End */
+
+
+
+
+
+/* SideBar Drawer */
+
+/*
+.SidebarDrawer {
+    background-image: url("../Assert/deneme4.gif");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+*/
+
+/* SideBar Drawer End */
+
+
+
+
+/* Sidebar Avatar */
+
+.SidebarAvatarBox {
+    display: flex;
+    border-top: 20px solid rgb(92, 5, 255);
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    margin-bottom: 4vh;
+}
+
+.SidebarAvatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: AvatarAnim 0.5s;
+    margin-top: 4vh;
+}
+
+
+.SidebarAvatarText {
+    color: white;
+    margin-top: 0.5vh !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+
+@keyframes AvatarAnim {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Sidebar Avatar End */
+
+
+
+/* Sidebar List */
+
+.SidebarList {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 60vh;
+}
+
+.SidebarListItem {
+    padding: 0 !important;
+    margin-top: 3vh !important;
+    animation: sidebarOpenItem1 0.5s;
+    transition: 0.6s;
+}
+
+.SidebarListItemText {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 800 !important;
+}
+
+.Link {
+    text-decoration: none !important;
+}
+
+.SidebarListItem:hover {
+    transform: translateX(12px) scale(1.05);
+    border: 1px solid rgb(5, 163, 255);
+    outline: 1px solid rgb(5, 163, 255);
+    border-radius: 30px;
+    margin-left: 15px !important;
+    transition: 0.6s;
+}
+
+.SidebarListItemAnim2 {
+    animation: sidebarOpenItem2 0.5s;
+}
+
+@keyframes sidebarOpenItem1 {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes sidebarOpenItem2 {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+/* Sidebar List End */
+
+
+
+
+.SidebarDigiSchools {
+    display: flex;
+    justify-content: center;
+    border-bottom: 20px solid rgb(92, 5, 255);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+
+@media only screen and (max-height: 1025px) {   
+    .SidebarListItemText {
+        font-size: 18px !important;
+    }
+
+    .MuiDrawer-paper {
+        width: 20% !important;
+    }
+
+    .SidebarAvatarText {
+        font-size: 18px !important;
+    }
+
+    .SidebarAvatar div {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .SidebarList {
+        max-height: 60vh !important;
+    }
+
+    .SidebarDigiSchools svg {
+        max-height: 160px !important;
+        max-width: 180px !important;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .SidebarListItemText {
+        font-size: 24px !important;
+    }
+
+    .MuiDrawer-paper {
+        width: 35% !important;
+    }
+
+    .SidebarAvatarText {
+        font-size: 24px !important;
+    }
+
+    .SidebarAvatar div {
+        width: 110px !important;
+        height: 110px !important;
+    }
+
+    .SidebarList {
+        max-height: 60vh !important;
+    }
+
+    .SidebarDigiSchools svg {
+        max-height: 130px !important;
+        max-width: 150px !important;
+    }
+}
+
+
+
+@media only screen and (max-height: 769px) {
+
+    .SidebarListItemText {
+        font-size: 14px !important;
+    }
+
+    .MuiDrawer-paper {
+        width: 25% !important;
+    }
+
+    .SidebarAvatarText {
+        font-size: 16px !important;
+    }
+
+    .SidebarAvatar div {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    .SidebarList {
+        max-height: 55vh !important;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .SidebarListItemText {
+        font-size: 20px !important;
+    }
+
+    .MuiDrawer-paper {
+        width: 30% !important;
+    }
+
+    .SidebarAvatarText {
+        font-size: 20px !important;
+    }
+
+    .SidebarAvatar div {
+        width: 95px !important;
+        height: 95px !important;
+    }
+
+    .SidebarList {
+        max-height: 60vh !important;
+    }
+
+}
+
+
+
+
+@media only screen and (max-height: 481px) {
+    .SidebarListItemText {
+        font-size: medium !important;
+    }
+
+    .MuiDrawer-paper {
+        width: 30% !important;
+    }
+
+    .SidebarAvatarText {
+        font-size: 15px !important;
+    }
+
+    .SidebarAvatar div {
+        width: 65px !important;
+        height: 65px !important;
+    }
+
+    .SidebarList {
+        max-height: 50vh !important;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    
+    .SidebarDigiSchools svg {
+        max-height: 80px !important;
+        max-width: 100px !important;
+    }
+
+    .SidebarListItemText {
+        font-size: small !important;
+    }
+
+    .MuiDrawer-paper {
+        width: 30% !important;
+    }
+
+    .SidebarAvatarText {
+        font-size: 15px !important;
+    }
+
+    .SidebarAvatar div {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .SidebarList {
+        max-height: 50vh !important;
+    }
+}
+
+
+
+@media only screen and (max-height: 415px) {
+    .SidebarListItemText {
+        font-size: 14px !important;
+    }
+
+    .MuiDrawer-paper {
+        width: 23% !important;
+    }
+
+    .SidebarAvatarText {
+        font-size: 12px !important;
+    }
+
+    .SidebarAvatarBox {
+        height: 30% !important;
+    }
+
+    .SidebarAvatar div {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .SidebarList {
+        max-height: 40vh !important;
+    }
+
+    .SidebarDigiSchools svg {
+        height: 70px !important;
+        padding-bottom: 4px !important;
+        width: 120px !important;
+    }
+
+    .SidebarListItem {
+        margin: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    
+    .SidebarDigiSchools svg {
+        max-height: 60px !important;
+        margin-bottom: 5px !important;
+    }
+
+
+    .SidebarListItemText {
+        display: none;
+    }
+
+    .SidebarListItem div div {
+        justify-content: center;
+        align-content: center;
+        width: 100% !important;
+    }
+
+    .SidebarListItem div {
+        padding: none !important;
+    }
+
+    .MuiDrawer-paper {
+        width: 25% !important;
+    }
+
+    .SidebarAvatarText {
+        font-size: 14px !important;
+    }
+
+    .SidebarAvatar div {
+        width: 55px !important;
+        height: 55px !important;
+    }
+
+    .SidebarList {
+        max-height: 55vh !important;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

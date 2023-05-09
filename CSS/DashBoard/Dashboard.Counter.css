@@ -1,0 +1,134 @@
+
+
+.Counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 2rem;
+    height: 250px !important;
+    margin-bottom: 3rem;
+}
+
+.CounterItem {
+    width: 22.5%;
+    height: 100%;
+    border-radius: 20px !important; 
+}
+
+.CounterItemMedia {
+    height: 55%;
+}
+
+.CounterItemHeader div span, .CounterItemContent {
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.CounterItemHeader, .CounterItemContent {
+    padding: 10px !important;
+    height: 15% !important;
+}
+
+.CounterItem-0-Color {
+    background-color: #4cd137;
+}
+.CounterItem-1-Color {
+    background-color: #0097e6;
+}
+.CounterItem-2-Color {
+    background-color: #3c40c6;
+}
+.CounterItem-3-Color {
+    background-color: #f53b57;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .CounterItemHeader div span, .CounterItemContent {
+        font-size: 16px !important;
+    }
+
+    .Counter {
+        height: 200px !important;
+    }
+
+    .CounterItemHeader, .CounterItemContent {
+        padding: 7.5px !important;
+    }  
+}
+
+@media only screen and (max-width: 1024px) {
+    .CounterItemHeader div span, .CounterItemContent {
+        font-size: 15px !important;
+    }
+
+    .Counter {
+        height: 200px !important;
+    }
+
+    .CounterItemHeader, .CounterItemContent {
+        padding: 7.5px !important;
+    }  
+}
+
+@media only screen and (max-width: 769px) {
+    .CounterItemHeader div span, .CounterItemContent {
+        font-size: 14px !important;
+    }
+    .Counter {
+        height: 175px !important;
+    }
+
+    .CounterItemHeader, .CounterItemContent {
+        padding: 6.5px !important;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .CounterItemHeader div span, .CounterItemContent {
+        font-size: 14px !important;
+    }
+    .Counter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 !important;
+    }
+
+    .CounterItemHeader, .CounterItemContent {
+        padding: 6.5px !important;
+    }
+
+    .CounterItem {
+        width: 40% !important;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-height: 415px) {
+    .CounterItemHeader div span, .CounterItemContent {
+        font-size: 19px !important;
+    }
+    .Counter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 !important;
+        
+    }
+
+    .CounterItemHeader, .CounterItemContent {
+        padding: 10px !important;
+    }
+
+    .CounterItem {
+        width: 40% !important;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,80 @@
+.ContainerBox-3 {
+    width: 100%;
+    height: 500px;
+    background-color: #f1f1f1;
+    margin-bottom: 3rem !important;
+    border-radius: 20px !important;
+    border: 2px solid #1B9CFC;
+
+}
+
+.ContainerFlex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit !important;
+}
+
+.Filter {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-right: 2px solid #1B9CFC;
+}
+
+.MarketBox {
+    width: 80%;
+    height: 100%;
+    padding: 15px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.MarketBoxUrunler {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FilterHeader {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 800 !important;
+    color: #262626;
+    height: 15%;
+    text-align: center;
+}
+
+
+.FilterBodyHeader {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 800 !important;
+    color: #262626;
+    height: 15%;
+    text-align: center;
+}
+
+.FilterBody {
+    height: 85%;
+}
+
+.MarketBoxCard {
+    width: 200px !important;
+    height: 200px !important;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.MarketBoxCardAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

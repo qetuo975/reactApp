@@ -1,0 +1,349 @@
+/* AppBar */
+.Global {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.AppBar {
+    height: 75px !important;
+    background-color: #1e272e !important;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+    
+
+
+.DarkMode, .SidebarOpen, .Sensor, .Notification-Button span span svg {
+    width: 3vw !important;
+    height: 3.5vh !important;
+}   
+
+
+
+/* ToolBar */
+
+.ToolBar {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.ToolBarBox-1 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ToolBarBox-2 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+/* NotificationButton */
+.Notification-Button {
+    min-width: 46px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.css-1d6wzja-MuiButton-startIcon {
+    margin: 0 !important;
+}
+
+.Notification-Button:hover {
+    animation: Notification 0.2s;
+}
+
+@keyframes Notification {
+    0% {
+        transform: rotateZ(-25deg);
+    }
+
+    33% {
+        transform: rotateZ(0deg);
+    }
+
+    66% {
+        transform: rotateZ(25deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+/* NotificationButton End */
+
+
+
+
+
+/* OnlineButton */
+
+.OnlineButton {
+    animation: OnlineOffline 0.5s infinite;
+}
+
+@keyframes OnlineOffline {
+    to {
+        transform: scale(0.98);
+    }
+
+    from {
+        transform: scale(1.05);
+
+    }
+}
+
+/* OnlineButton  End*/
+
+
+
+
+
+/* AccountButton */
+
+.AccountButton span {
+    border-radius: 50%;
+}
+
+.AccountButton:hover {
+    animation: AccountAnimation 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes AccountAnimation {
+    to {
+        transform: scale(1.25);
+    }
+
+    from {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+/* AccountButton End*/
+
+
+
+/* AccountMenuItem */
+
+.AccountMenuItem:hover {
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(92, 5, 255) !important;
+}
+  
+.AccountMenuItem:hover .AccountMenuItemAvatar {
+    animation: AccountMenuItemAvatar 0.2s;
+}
+
+.AccountMenuItemAvatar {
+    margin-right: 12px;
+}
+
+@keyframes AccountMenuItemAvatar {
+    0% {
+        transform: rotateZ(-20deg);
+    }
+
+    33% {
+        transform: rotateZ(0deg);
+    }
+
+    66% {
+        transform: rotateZ(20deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+/* AccountMenuItem End */
+
+
+
+
+
+
+
+/* Tablet Yatay */
+
+
+@media only screen and (max-width: 1366px) {
+
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 35px !important;
+    }
+    
+    .AccountButtonAvatar {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 20px;
+    }  
+}
+
+@media only screen and (max-height: 1366px) {
+
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 35px !important;
+        height: 40px !important;
+    }
+    
+    .AccountButtonAvatar {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 20px;
+    }  
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 32.5px !important;
+    }
+    
+    .AccountButtonAvatar {
+        width: 47.5px !important;
+        height: 47.5px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 15px;
+    }  
+}
+
+@media only screen and (max-height: 1024px) {
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 32.5px !important;
+        height: 40px !important;
+    }
+    
+    .AccountButtonAvatar {
+        width: 47.5px !important;
+        height: 47.5px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 15px;
+    }  
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 30px !important;
+    }
+
+    .AccountButtonAvatar {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 10px;
+    }  
+}
+
+@media only screen and (max-height: 768px) {
+
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 30px !important;
+        height: 40px !important;
+    }
+
+    .AccountButtonAvatar {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 10px;
+    }  
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 25px !important;
+    }
+
+    .AccountButtonAvatar {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 5px;
+    }  
+}
+
+
+@media only screen and (max-height: 480px) {
+
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 25px !important;
+        height: 40px !important;
+    }
+
+    .AccountButtonAvatar {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 5px;
+    }  
+}
+
+
+@media only screen and (max-width: 375px) {
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 22.5px !important;
+    }
+
+    .AccountButtonAvatar {
+        width: 37.5px !important;
+        height: 37.5px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 2.5px;
+    } 
+}
+
+
+@media only screen and (max-height: 375px) {
+    .DarkMode, .Sensor, .SidebarOpen, .Notification-Button span span svg {
+        width: 22.5px !important;
+        height: 35px !important;
+    }
+
+    .AccountButtonAvatar {
+        width: 37.5px !important;
+        height: 37.5px !important;
+    }
+
+    .ToolBarBox-2 {
+        gap: 2.5px;
+    } 
+}

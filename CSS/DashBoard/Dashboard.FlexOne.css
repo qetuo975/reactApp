@@ -1,0 +1,218 @@
+.FlexOne {
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+    margin: 0px 2rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.FlexOneTabsArea {
+    width: 60vw;
+    height: inherit;
+    border-radius: 20px;
+}
+
+.FlexOneTabs {
+    width: inherit;
+    border-radius: inherit;
+    background-color: #d1d8e0;
+    min-height: 0px !important;
+}   
+
+.FlexOneTabs div {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
+.FlexOneTab {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 800 !important;
+    animation: FlexOneTabAnimation 1s forwards;
+}
+
+
+.css-ahj2mt-MuiTypography-root {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.TabPanel {
+    border-radius: 20px;
+    width: calc(inherit - 15px);  
+    padding: 15px;
+    height: 340px;
+    border: 2px solid #1B9CFC; 
+}
+
+.FlexOneFormControl {
+    overflow: auto !important;
+}
+
+.TabPanelCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw !important;
+    height: 100%;
+}
+
+.TabPanelFormControllabel {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 20px !important;
+    text-align: center;
+    background-color: #1B9CFC;
+    border-radius: 20px;
+    color: white !important;
+    margin-bottom: 5px;
+}
+
+.TabPanelRow {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    height: 10%;
+}
+
+.css-1lj5uim-MuiStack-root {
+    flex-direction: row !important;
+}
+
+.TabPanelDataPicker {
+    margin: 0 !important;
+}
+
+
+.FlexOneList {
+    width: 30% !important;
+    height: 100%;
+    overflow: auto;
+    border: 2px solid #1B9CFC;
+    border-radius: 25px !important;
+    background-color: #ffffff;
+}
+
+.ListSubHeader {
+    text-align: center;
+    font-size: large !important;
+    color: white !important;
+    background-color: #1B9CFC !important;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .TabPanelCard {
+        width: 30vw !important;
+    }
+
+    .FlexOne {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .FlexOneTabs {
+        width: calc(100vw - 65px);
+    }
+
+    .TabPanel {
+        width: calc(100vw - 100px);
+    }
+
+    .FlexOneList {
+        margin-top: 1rem;
+        width: calc(95vw - 22.5px) !important;
+    }
+
+   
+}
+
+@media only screen and (max-width: 768px) {
+    .FlexOneList {
+        margin-top: 1rem;
+        width: calc(95vw - 32px) !important;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .FlexOneList {
+        margin-top: 1rem;
+        width: calc(95vw - 42.5px) !important;
+    }
+}
+
+@media only screen and (max-height: 540px) {
+    .FlexOneList {
+        margin-top: 1rem;
+        width: calc(95vw - 42.5px) !important;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .TabPanelCard {
+        display: none;
+    }
+
+    .FlexOne {
+        margin-top: 250px !important;
+    }
+
+    .FlexOneFormControl {
+        margin: 15px !important;
+    }
+
+    .FlexOneList {
+        margin-top: 1rem;
+        width: calc(95vw - 47.5px) !important;
+    }
+}
+
+@media only screen and (max-height: 415px) {
+    .FlexOne {
+        margin-top: 250px !important;
+    }
+
+    .FlexOneFormControl {
+        margin: 15px !important;
+    }
+
+    .FlexOneList {
+        margin-top: 1rem;
+        width: calc(95vw - 25px) !important;
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+    .FlexOneList {
+        margin-top: 1rem;
+        width: calc(95vw - 52.5px) !important;
+    }
+}
+
+@media only screen and (max-height: 375px) {
+    .FlexOneList {
+        margin-top: 1rem;
+        width: calc(95vw - 52.5px) !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes FlexOneTabAnimation {
+    from {
+        transform: translateX(-500px) rotate(360deg);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}

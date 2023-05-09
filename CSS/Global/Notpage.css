@@ -1,0 +1,17 @@
+.Container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1ff;
+}
+
+.Box {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../Assert/404.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
